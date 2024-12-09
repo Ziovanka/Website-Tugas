@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku KIA 2024</title>
+    <link rel="stylesheet" href="buku_kia_2024.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Judul Halaman -->
+        <h1>Buku KIA 2024</h1>
+
+        <!-- Gambar Cover Buku -->
+        <div class="cover-container">
+            <img src="cover-buku-kia-2024.jpg" alt="Cover Buku KIA 2024" class="cover-image">
+        </div>
+
+        <!-- Tombol Lihat dan Download Buku -->
+        <div class="button-container">
+            <br>
+            <button class="custom-button" onclick="downloadBuku()">Lihat atau Download Buku</button>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="button-container">
+            <br>
+            <button class="custom-button back-button" onclick="kembali()">Kembali</button>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk tombol "Download Buku"
+        function downloadBuku() {
+            window.location.href = "buku_kia_2024.pdf"; // Ganti dengan file buku untuk diunduh
+        }
+
+        // Fungsi untuk tombol "Kembali"
+        function kembali() {
+            window.location.href = "index.html"; // Ganti dengan halaman utama Anda
+        }
+    </script>
+</body>
+</html>

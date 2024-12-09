@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator MAP (Mean Arterial Pressure)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator MAP (Mean Arterial Pressure)</h1>
+
+        <!-- Formulir input -->
+        <label for="dp">Tekanan Darah Diastolik (DP) :</label>
+        <input type="number" id="dp" placeholder="Masukkan nilai DP" required>
+
+        <label for="sp">Tekanan Darah Sistolik (SP) :</label>
+        <input type="number" id="sp" placeholder="Masukkan nilai SP" required>
+
+        <label for="pp">Tekanan Nadi (PP) :</label>
+        <input type="number" id="pp" placeholder="Masukkan nilai PP" required>
+
+        <button class="custom-button" onclick="hitungMAP()">Hitung MAP</button>
+
+        <p id="hasil-map"></p>
+        <p class="error" id="error-message"></p>
+
+        <!-- Tombol Kembali -->
+        <button class="custom-button" onclick="kembali()">Kembali</button>
+    </div>
+
+    <script>
+        // Fungsi untuk menghitung MAP
+        function hitungMAP() {
+            // Ambil nilai input
+            var dp = parseFloat(document.getElementById('dp').value);
+            var sp = parseFloat(document.getElementById('sp').value);
+            var pp = parseFloat(document.getElementById('pp').value);
+
+            // Cek apakah input valid
+            if (isNaN(dp) || isNaN(sp) || isNaN(pp) || dp <= 0 || sp <= 0 || pp <= 0) {
+                document.getElementById('error-message').innerText = "Harap masukkan nilai yang valid!";
+                document.getElementById('hasil-map').innerText = '';
+                return;
+            }
+
+            // Rumus MAP
+            var map = dp + (1 / 3) * (sp - dp); // Atau bisa menggunakan rumus: dp + (1 / 3) * pp
+
+            // Tampilkan hasil
+            document.getElementById('hasil-map').innerText = "MAP (Tekanan Arterial Rata-rata): " + map.toFixed(2) + " mmHg";
+            document.getElementById('error-message').innerText = ''; // Bersihkan pesan error jika valid
+        }
+
+        // Fungsi untuk tombol Kembali
+        function kembali() {
+            window.history.back(); // Mengarahkan ke halaman sebelumnya
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Indeks Massa Tubuh (IMT) Ibu Hamil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Indeks Massa Tubuh (IMT) Ibu Hamil</h1>
+        
+        <form id="imtForm">
+            <label for="tinggi">Tinggi Badan (cm):</label>
+            <input type="number" id="tinggi" name="tinggi" required>
+
+            <label for="berat">Berat Badan (kg):</label>
+            <input type="number" id="berat" name="berat" required>
+
+            <button type="button" onclick="hitungIMT()">Hitung IMT</button>
+        </form>
+
+        <div id="hasilIMT" class="hasil">
+            <!-- Hasil IMT akan ditampilkan di sini -->
+        </div>
+
+        <button onclick="kembali()">Kembali</button>
+    </div>
+
+    <script>
+        function hitungIMT() {
+            // Ambil nilai input
+            const tinggi = document.getElementById("tinggi").value;
+            const berat = document.getElementById("berat").value;
+
+            // Menghitung IMT
+            if (tinggi && berat) {
+                const tinggiMeter = tinggi / 100; // Mengubah tinggi dari cm ke meter
+                const imt = berat / (tinggiMeter * tinggiMeter);
+
+                // Menampilkan hasil IMT
+                let hasil = `IMT Anda adalah: ${imt.toFixed(2)}`;
+
+                // Menampilkan kategori IMT untuk ibu hamil
+                if (imt < 18.5) {
+                    hasil += "<br>Kategori: Kurang Berat Badan - Perhatikan kenaikan berat badan selama kehamilan.";
+                } else if (imt >= 18.5 && imt <= 24.9) {
+                    hasil += "<br>Kategori: Normal - Pertahankan pola makan yang sehat.";
+                } else if (imt >= 25 && imt <= 29.9) {
+                    hasil += "<br>Kategori: Kelebihan Berat Badan - Konsultasikan dengan dokter mengenai kenaikan berat badan.";
+                } else {
+                    hasil += "<br>Kategori: Obesitas - Perlu perhatian medis mengenai berat badan.";
+                }
+
+                document.getElementById("hasilIMT").innerHTML = hasil;
+            } else {
+                alert("Harap masukkan nilai yang valid!");
+            }
+        }
+
+        // Fungsi untuk kembali ke halaman utama
+        function kembali() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

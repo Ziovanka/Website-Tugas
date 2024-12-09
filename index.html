@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMILI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Tambahkan gambar -->
+        <br>
+        <img src="Gambar1-removebg-preview.png" alt="Gambar1" class="custom-image">
+        <h1>Selamat Datang</h1>
+        <p>Pilih salah satu tombol di bawah:</p>
+        <!-- Tombol pertama -->
+        <button class="custom-button" onclick="pindahHalaman1()">TANDA BAHAYA KEHAMILAN</button>
+        <!-- Tombol kedua -->
+        <button class="custom-button" onclick="pindahHalaman2()">KALKULATOR INDEX MASA TUBUH (IMT)</button>
+        <!-- Tombol ketiga -->
+        <button class="custom-button" onclick="pindahHalaman3()">MAP</button>
+        <!-- Tombol keempat -->
+        <button class="custom-button" onclick="pindahHalaman4()">BUKU KIA 2024</button>
+        <p id="pesan" style="margin-top: 20px; color: black; font-size: 18px;"></p>
+    </div>
+
+    <script>
+        // Fungsi untuk tombol 1
+        function pindahHalaman1() {
+            window.location.href = "tanda-bahaya-kehamilan.html";
+        }
+
+        // Fungsi untuk tombol 2
+        function pindahHalaman2() {
+            window.location.href = "kalkulator_imt.html";
+        }
+
+        // Fungsi untuk tombol 3
+        function pindahHalaman3() {
+            window.location.href = "map.html";
+        }
+         // Fungsi untuk tombol 4
+        function pindahHalaman4() {
+            window.location.href = "kia.html";
+        }
+    </script>
+</body>
+</html>

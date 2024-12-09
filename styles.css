@@ -1,0 +1,541 @@
+/* Gaya untuk body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7eb3, #ff759c);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Membungkus konten agar lebih terpusat */
+.container {
+    text-align: center;
+    background: white; /* Warna putih tegas */
+    padding: 20px;
+    border-radius: 0px; /* Hapus efek lengkungan */
+    color: black; /* Ubah warna teks di dalam kotak */
+}
+
+/* Gaya untuk gambar */
+.custom-image {
+    width: 200px; /* Ubah ukuran gambar */
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px; /* Membuat gambar memiliki sudut melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk tombol */
+.custom-button {
+    background-color: #ffffff;
+    color: #ff758c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.custom-button:hover {
+    background-color: #ff7eb3;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+
+
+/* Gaya untuk body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7eb3, #ff759c);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Membungkus konten agar lebih terpusat */
+.container {
+    text-align: center;
+    background: white; /* Warna putih untuk kontras */
+    padding: 20px;
+    border-radius: 10px;
+    color: black; /* Warna teks */
+    width: 300px; /* Membatasi lebar kontainer */
+}
+
+/* Tombol dengan tampilan vertikal */
+.custom-button {
+    background-color: #ffffff;
+    color: #ff758c;
+    border: 3px solid #ff758c; /* Warna border */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px; /* Membuat sudut melengkung */
+    cursor: pointer; /* Kursor berbentuk tangan */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.2s;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.custom-button:hover {
+    background-color: #ff7eb3; /* Ubah warna latar saat hover */
+    color: #ffffff; /* Ubah warna teks saat hover */
+    border-color: #ffffff; /* Ubah warna border saat hover */
+    transform: scale(1.05); /* Efek memperbesar */
+}
+
+
+
+/* Tombol 1 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7eb3, #ff759c);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    width: 300px;
+}
+
+.custom-button {
+    background-color: #ffffff;
+    color: #ff758c;
+    border: 3px solid #ff758c;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.custom-button:hover {
+    background-color: #ff7eb3;
+    color: #ffffff;
+    border-color: #ffffff;
+    transform: scale(1.05);
+}
+
+
+
+/* Gaya untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Kontainer utama */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Gaya untuk form input */
+form {
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk label dan input */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Gaya untuk tombol */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Gaya untuk hasil IMT */
+.hasil {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Gaya untuk tombol kembali */
+button[onclick="kembali()"] {
+    background-color: #ff4d4d;
+    margin-top: 20px;
+}
+
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk seluruh body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Gaya untuk container utama */
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Gaya untuk judul */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk label dan input */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Gaya untuk input */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Gaya untuk tombol */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Atur font dan background halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container utama */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Label dan input form */
+label {
+    font-size: 16px;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Tombol */
+button.custom-button {
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button.custom-button:hover {
+    background-color: #2980b9;
+}
+
+/* Hasil dan error message */
+#hasil-map {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #27ae60;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Styling tombol Kembali */
+button.custom-button:last-child {
+    background-color: #e74c3c;
+    margin-top: 20px;
+}
+
+button.custom-button:last-child:hover {
+    background-color: #c0392b;
+}
+
+/* Mengatur tampilan utama */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container utama */
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul Halaman */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Gambar Cover */
+.cover-container {
+    margin: 20px 0;
+}
+
+.cover-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol */
+.button-container {
+    margin-top: 20px;
+}
+
+.custom-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #45a049;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 480px) {
+    .custom-button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .cover-image {
+        width: 100%;
+    }
+}
+
+/* Mengatur tampilan utama */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container utama */
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul Halaman */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Gambar Cover */
+.cover-container {
+    margin: 20px 0;
+}
+
+.cover-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol */
+.button-container {
+    margin-top: 20px;
+}
+
+.custom-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #45a049;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 480px) {
+    .custom-button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .cover-image {
+        width: 100%;
+    }
+}
+
+.back-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+     background-color: #45a049;
+
+}
+
+

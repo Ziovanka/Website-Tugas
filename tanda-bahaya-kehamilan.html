@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanda Bahaya Kehamilan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h1>Tanda Bahaya Kehamilan</h1>
+        <img src="2-removebg-preview.png" alt="Gambar1" class="custom-image">
+        <!-- Trimester I -->
+        <h2>Trimester I</h2>
+        <ul>
+            <li>Pendarahan</li>
+            <li>Nyeri perut hebat</li>
+            <li>Mual dan muntah yang tidak berhenti</li>
+        </ul>
+
+        <button class="custom-button" onclick="infoTrimester1()">Info Trimester I</button>
+
+        <!-- Trimester II -->
+        <h2>Trimester II</h2>
+        <ul>
+            <li>Pendarahan</li>
+            <li>Kaki bengkak hebat atau tekanan darah tinggi</li>
+            <li>Nyeri kepala parah</li>
+        </ul>
+        <button class="custom-button" onclick="infoTrimester2()">Info Trimester II</button>
+
+        <!-- Trimester III -->
+        <h2>Trimester III</h2>
+        <ul>
+            <li>Pendarahan hebat</li>
+            <li>Kontraksi dini sebelum waktunya</li>
+            <li>Gerakan janin berkurang</li>
+        </ul>
+        <button class="custom-button" onclick="infoTrimester3()">Info Trimester III</button>
+
+        <!-- Tombol Kembali -->
+        <button class="custom-button" onclick="kembali()">Kembali</button>
+    </div>
+
+    <script>
+        // Fungsi untuk tombol Trimester I
+        function infoTrimester1() {
+            alert("Informasi lebih lanjut tentang Tanda Bahaya Trimester I:\n- Pendarahan\n- Nyeri perut hebat\n- Mual dan muntah yang tidak berhenti.");
+        }
+
+        // Fungsi untuk tombol Trimester II
+        function infoTrimester2() {
+            alert("Informasi lebih lanjut tentang Tanda Bahaya Trimester II:\n- Pendarahan\n- Kaki bengkak hebat atau tekanan darah tinggi\n- Nyeri kepala parah.");
+        }
+
+        // Fungsi untuk tombol Trimester III
+        function infoTrimester3() {
+            alert("Informasi lebih lanjut tentang Tanda Bahaya Trimester III:\n- Pendarahan hebat\n- Kontraksi dini sebelum waktunya\n- Gerakan janin berkurang.");
+        }
+
+        // Fungsi untuk tombol Kembali
+        function kembali() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
